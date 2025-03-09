@@ -1,0 +1,199 @@
+:root {
+  --black: #0f1616;
+  --dkblue: #171321;
+  --blue: #0d314b;
+  --lightman: rgb(248, 150, 21);
+  --mandarin: #66FCF1;
+  --accent: #45a29e;
+  --white: #C5C6C7;
+  --gray: #2a2a2a;
+  --lightgray: #e0e0e0;
+  color: #C5C6C7;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.gradient {
+  background: linear-gradient(90deg, rgb(2, 23, 138) 0%, rgb(10, 241, 241) 100%);
+  height: 2px;
+}
+
+.landing{
+  padding: 8rem 5rem;
+  
+}
+.name{
+  color: var(--mandarin);
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 0;
+  gap: 15px;
+  justify-content: center;
+}
+.namee-view{
+  text-align: start;
+  justify-items: flex-start;
+  flex-basis: 80%; 
+}
+.namee-view h1{
+  font-size: 8rem;
+  display: flex;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.namee-view h3{
+  font-size: 3rem;
+  line-height: 1;
+}
+.aesthetics{
+  flex-basis: 20%;
+  gap: 5px;
+  text-align: end;
+  margin-top: 8rem;
+}
+.aesthetics [class*="bx-"] {
+  font-size: 40px;
+}
+
+.intro{
+  display: flex;
+  gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.connect{
+  flex-basis: 50%;
+}
+
+.connect ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.connect ul a {
+  color: var(--lightgray);
+  border: var(--mandarin) 1px solid;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  transition: all .45s ease;
+  -webkit-transition: all .45s ease;
+  -moz-transition: all .45s ease;
+  -ms-transition: all .45s ease;
+  -o-transition: all .45s ease;
+}
+
+.intro a:hover {
+  color: var(--mandarin);
+}
+
+.connect p a{
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--lightgray);
+}
+.connect a:active {
+  color: var(--mandarin);
+}
+.about-text{
+  flex-basis: 50%;
+}
+
+@media  (max-width:770px) {
+  .landing{
+    padding: 8rem 2rem;
+  }
+  .namee-view h1{
+    font-size: 5rem;
+    display: flex;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  .namee-view h3{
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .aesthetics{
+    display: none;
+  }
+  .intro{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .connect {
+    align-self: end;
+    margin: 20px 0;
+  }
+}
+
+/* Contibution Section */
+.contribution {
+  margin: 2rem 5rem; 
+}
+.contribution h1{
+  color: var(--white);
+  padding-top: 1rem;
+  font-size: 40px;
+}
+.contribution p{
+  text-align: start;
+}
+.graph{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+  color: var(--mandarin);
+  border: 1px solid var(--gray);
+  padding: 1.8rem 0;
+  border-radius: 10px;
+}
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: #0ab0a5; 
+}
+
+.tabs button.active {
+  background-color: #0ab0a5; 
+}
+
+@media  (max-width:768px){
+  .contribution {
+    margin: 2rem 2rem; 
+  }
+}

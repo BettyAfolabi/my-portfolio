@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: Roboto, "sans-serif";
+  --color-purple: #d173d6;
+  --color-green: #66FCF1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
