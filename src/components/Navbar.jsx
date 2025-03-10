@@ -14,7 +14,7 @@ function NavItem({ href, children }) {
     <li className="list-none">
       <Link
         to={href}
-        className={`relative block px-3 py-2 transition text-black dark:text-white 
+        className={`relative block px-6 sm:px-3 py-2 text-lg sm:text-base transition text-black dark:text-white 
           ${isActive ? "" : "hover:text-green"}`}
       >
         {children}
@@ -60,7 +60,7 @@ export default function Navigation(props) {
               className="relative focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <i className="bx bx-sm bx-menu text-whitte hover:text-green cursor-pointer lg:hidden"></i>
+              <i className="bx bx-sm bx-menu text-white hover:text-green cursor-pointer lg:hidden"></i>
             </PopoverButton>
             <Transition
               as={Fragment}
@@ -78,11 +78,11 @@ export default function Navigation(props) {
                     className="bx bx-x bx-md hover:text-red-500 self-end my-3 mr-3"
                     onClick={() => setIsOpen(false)}
                   ></i>
-                  <NavItem className="link active" href="/" onClick={() => setIsOpen(false)}>Home</NavItem>
-                  <NavItem className="link" href="/#about" onClick={() => setIsOpen(false)}>About</NavItem>
-                  <NavItem className="link" href="/#projects" onClick={() => setIsOpen(false)}>Projects</NavItem>
-                  <NavItem className="link" href="/events" onClick={() => setIsOpen(false)}>Events</NavItem>
-                  <NavItem className="link" href="/blog" onClick={() => setIsOpen(false)}>Blog</NavItem>
+                  <NavItem className=" text-white hover:text-green text-base active" href="/" onClick={() => setIsOpen(false)}>Home</NavItem>
+                  <NavItem className=" text-white hover:text-green text-base" href="/#about" onClick={() => setIsOpen(false)}>About</NavItem>
+                  <NavItem className=" text-white hover:text-green text-base" href="/#projects" onClick={() => setIsOpen(false)}>Projects</NavItem>
+                  <NavItem className=" text-white hover:text-green text-base" href="/events" onClick={() => setIsOpen(false)}>Events</NavItem>
+                  <NavItem className=" text-white hover:text-green text-base" href="/blog" onClick={() => setIsOpen(false)}>Blog</NavItem>
                 </div>
               </PopoverPanel>
             </Transition>

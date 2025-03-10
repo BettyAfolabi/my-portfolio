@@ -26,7 +26,7 @@ export default function AboutTabs() {
         </div>
 
         {/* Tab Content */}
-        <div className="font-roboto h-[400px] sm:h-[450px] lg:h-[500px]  overflow-y-auto scrollbar-thin scrollbar-thumb-green/50 scrollbar-track-gray-800">
+        <div className="font-roboto h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-green/50 scrollbar-track-gray-800">
           {activeTab === "experience" && <Experience />}
           {activeTab === "education" && <Education />}
           {activeTab === "skills" && <Skills />}
