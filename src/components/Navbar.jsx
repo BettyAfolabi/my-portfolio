@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Fragment } from 'react'
+import { Link, useLocation, Outlet } from "react-router-dom";
+import { Popover, PopoverButton, PopoverPanel, Transition } from "@headlessui/react";
 import './comp.css'
 
 
@@ -7,8 +9,9 @@ function NavItem({ href, children }) {
   const location = useLocation();
   let isActive = location.pathname === href;
 
+
   return (
-    <li>
+    <li className="list-none">
       <Link
         to={href}
         className={`relative block px-3 py-2 transition text-black dark:text-white 
@@ -24,6 +27,7 @@ function NavItem({ href, children }) {
 }
 
 export default function Navigation(props) {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -41,15 +45,51 @@ export default function Navigation(props) {
         <p>Devduchess</p>
 
         <ul className="navlist">
-            <li><NavItem className="link active" href="/">Home</NavItem></li>
-            <li><NavItem className="link" href="/#about">About</NavItem></li>
-            <li><NavItem className="link" href="/#projects">Projects</NavItem></li>
-            <li><NavItem className="link" href="/events">Events</NavItem></li>
-            <li><NavItem className="link" href="/blog">Blog</NavItem></li>
+          <NavItem className="link active" href="/">Home</NavItem>
+          <NavItem className="link" href="/#about">About</NavItem>
+          <NavItem className="link" href="/#projects">Projects</NavItem>
+          <NavItem className="link" href="/events">Events</NavItem>
+          <NavItem className="link" href="/blog">Blog</NavItem>
             
         </ul>
-        <div className="bx bx-menu" id="menu-icon"></div>
+
+        {/* Mobile Naavigation */}
+        <div className="sm:hidden">
+        <Popover>
+            <PopoverButton
+              className="relative focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <i className="bx bx-sm bx-menu text-whitte hover:text-green cursor-pointer lg:hidden"></i>
+            </PopoverButton>
+            <Transition
+              as={Fragment}
+              show={isOpen}
+              enter="transition ease-out duration-300 transform"
+              enterFrom="opacity-0 translate-y-2"
+              enterTo="opacity-100 translate-y-0"
+              leave="transition ease-in duration-200 transform"
+              leaveFrom="opacity-100 translate-y-0"
+              leaveTo="opacity-0 translate-y-2"
+            >
+              <PopoverPanel className="absolute left-0 top-0">
+                <div className="w-[250px] h-screen bg-black font-normal flex flex-col cursor-pointer">
+                  <i
+                    className="bx bx-x bx-md hover:text-red-500 self-end my-3 mr-3"
+                    onClick={() => setIsOpen(false)}
+                  ></i>
+                  <NavItem className="link active" href="/" onClick={() => setIsOpen(false)}>Home</NavItem>
+                  <NavItem className="link" href="/#about" onClick={() => setIsOpen(false)}>About</NavItem>
+                  <NavItem className="link" href="/#projects" onClick={() => setIsOpen(false)}>Projects</NavItem>
+                  <NavItem className="link" href="/events" onClick={() => setIsOpen(false)}>Events</NavItem>
+                  <NavItem className="link" href="/blog" onClick={() => setIsOpen(false)}>Blog</NavItem>
+                </div>
+              </PopoverPanel>
+            </Transition>
+          </Popover>
+        </div>
     </nav>
+    <Outlet />
     </div>
   )
 }

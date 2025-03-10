@@ -11,7 +11,7 @@ export default function Footer() {
                 <p className="text-white font-normal text-sm max-w-[600px]">I’m always excited to hear about new ideas, collaborate with creative minds, and explore innovative design solutions. Whether you have a project in mind or just want to chat, I’d love to connect. Let’s build something amazing together.</p>
             </div>
 
-            <div className="basis-full lg:basis-1/2 flex items-center gap-20 lg:justify-evenly my-6 lg:my-0 ">
+            <div className="basis-full lg:basis-1/2 flex items-center gap-20 lg:justify-evenly mt-10 mb-6 lg:my-0 ">
                 <div className="lg:justify-items-end">
                 <div className="relative w-40 h-40">
                     <div className="absolute inset-0 bg-gray-700 rounded-lg translate-x-2 translate-y-3"></div>

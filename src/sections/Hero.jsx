@@ -19,7 +19,7 @@ export default function Hero() {
     <>
      <Navigation />
     
-      <section className="name py-20 mt-20 lg:mb-20 lg:mx-32 px-8 lg:px-32">
+      <section className="name py-20 mt-20 lg:mb-20 md:mx-12 lg:mx-32 px-8 md:px-32">
         <div className="namee-view">
           <h3 className="text-green">Elizabeth</h3>
           <h1 className="text-green"><span className="hidden lg:block">-</span>Afolabi</h1>
@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
       </section>
      
-      <div className="intro lg:pb-20 px-8 lg:px-20">
+      <div className="intro md:pb-20 px-8 lg:px-20">
         <div className="about-text">
           <p>{`Hi! I'm Elizabeth aka Betty. I'm a Frontend Developer who specialise in creating user-friendly and responsive websites. I add a refined touch to each project.`}</p>
           <div className='my-3 bg-[#45a29e] p-3 font-bold text-white hover:bg-[#45a29e]/80 rounded-2xl w-fit'><Link to="/#about">More About Me</Link></div>

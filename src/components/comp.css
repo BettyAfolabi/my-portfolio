@@ -69,6 +69,7 @@
     nav link {
         color: var(--white);
         text-decoration: none;
+        list-style-type: none;
         display: block;
         font-size: 16px;
         transition: all .45s ease;
@@ -107,7 +108,7 @@
         color: var(--white);
     }
     
-    @media (max-width: 840px) {
+    @media (max-width: 640px) {
         #menu-icon {
         display: block;
         }

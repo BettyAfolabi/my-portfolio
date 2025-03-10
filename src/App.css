@@ -117,15 +117,20 @@ h1, h2, h3 {
   flex-basis: 50%;
 }
 
-@media  (max-width:770px) {
+@media  (max-width:767px) {
   .landing{
     padding: 8rem 2rem;
+  }
+  .namee-view{
+    margin-top: 2rem;
   }
   .namee-view h1{
     font-size: 5rem;
     display: flex;
     line-height: 1.5;
     letter-spacing: 1px;
+    padding-left: 20px;
+    padding-top: 10px;
   }
   .namee-view h3{
     font-size: 2rem;
