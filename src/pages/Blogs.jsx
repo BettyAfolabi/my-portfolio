@@ -1,13 +1,62 @@
-import React from 'react'
-import Navigation from '../components/Navbar'
+import React, { useEffect, useState } from "react";
 
 const Blogs = () => {
-  return (
-    <div className=''>
-        <Navigation />
-      <h3 className='flex justify-center items-center text-2xl text-green font-serif font-bold h-screen'>Coming soon !</h3>
-    </div>
-  )
-}
+  const [blogs, setBlogs] = useState([]);
 
-export default Blogs
+  useEffect(() => {
+    const fetchBlogs = async () => {
+        try {
+            const response = await fetch(
+                "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@devduchess"
+            );
+            const data = await response.json();
+            setBlogs(data.items);
+        } catch (error) {
+            console.error("Error fetching Medium RSS feed:", error);
+        }
+    };
+
+    fetchBlogs();
+  }, []); 
+
+  return (
+    <div className="pt-28 lg:pt-40 w-5/6 max-w-6xl mx-auto">
+      <h2 className="text-3xl text-center lg:text-4xl sm:text-5xl font-extrabold text-white drop-shadow-lg">
+        What I'm writing about
+      </h2>
+
+      <p className="text-lg text-gray-200 mt-2">
+        Documenting my tech journey, one blog at a time 🚀
+      </p>
+
+      <div className="grid grid-cols-1 gap-6 justify-items-center my-10">
+          {blogs.length > 0 ? (
+              blogs.map((blog, index) => (
+                  <div key={index} className="bg-black/20 rounded-3xl shadow-3xl overflow-hidden flex flex-col justify-between pb-5 h-[400px] md:h-[500px]">
+                      <img
+                          src={blog.thumbnail || "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*fWmtnvsF2HV6AQSMQNirqg.jpeg"} 
+                          alt={blog.title}
+                          className="w-full h-52 md:h-[300px] object-cover"
+                      />
+                      <div className="px-6 lg:px-10 lg:pb-10">
+                          <h3 className="text-xl font-semibold">
+                              <a href={blog.link} target="_blank" rel="noopener noreferrer" className="text-green pb-5 text-xl md:text-3xl md:leading-9 font-semibold hover:underline">
+                                  {blog.title}
+                              </a>
+                          </h3>
+                          <p className="text-white text-sm mt-2">{blog.pubDate}</p>
+                          <p className="text-lightgray mt-3 line-clamp-3">
+                              {blog.description.replace(/<[^>]*>?/gm, '').substring(0, 50)}...
+                          </p>
+                      </div>
+                  </div>
+              ))
+          ) : (
+              <p className="text-center text-lightgray text-base lg:text-2xl font-medium">Loading blogs...</p>
+          )}
+      </div>
+    </div>
+  );
+};
+
+export default Blogs;

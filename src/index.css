@@ -4,12 +4,14 @@
 }
 
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
   --font-roboto: Roboto, "sans-serif";
   --color-purple: #d173d6;
   --color-green: #66FCF1;
   --color-dkgreen: #054744;
+  --color-lightgray: #D6D6D6;
 }
 
 html, body {

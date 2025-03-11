@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import '../App.css'
-import Navigation from '../components/Navbar'
 
 export default function Hero() {
   const location = useLocation();
@@ -17,9 +16,8 @@ export default function Hero() {
   
   return (
     <>
-     <Navigation />
     
-      <section className="name py-20 mt-20 lg:mb-20 md:mx-12 lg:mx-32 px-8 md:px-32">
+      <section className="name py-20 mt-20 lg:mb-18 md:mx-12 lg:mx-32 px-8 md:px-32">
         <div className="namee-view">
           <h3 className="text-green">Elizabeth</h3>
           <h1 className="text-green"><span className="hidden lg:block">-</span>Afolabi</h1>

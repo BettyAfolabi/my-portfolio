@@ -1,6 +1,5 @@
 import { GraphQLClient } from 'graphql-request';
 
-// Initialize the client with the GitHub API endpoint and token
 const GITHUB_API_URL = 'https://api.github.com/graphql';
 const client = new GraphQLClient(GITHUB_API_URL, {
   headers: {
@@ -8,7 +7,6 @@ const client = new GraphQLClient(GITHUB_API_URL, {
   },
 });
 
-// GraphQL query to fetch contributions for a specific year
 export const getContributionsByYear = async (username, from, to) => {
   const query = `
     query($username: String!, $from: DateTime!, $to: DateTime!) {

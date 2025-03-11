@@ -15,7 +15,7 @@ export default function Projects() {
 
     return (
         <div className='px-8 lg:px-20 py-30 bg-[#0d314b]' id="projects">
-            <div className='my-2 lg:my-5 flex flex-col'>
+            <div className='my-2 lg:my-5 flex flex-col overflow-hidden'>
                 <motion.h2 
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
@@ -43,8 +43,8 @@ export default function Projects() {
                         key={project.name}
                         initial={{ y: 100, opacity: 0 }} 
                         whileInView={{ y: 0, opacity: 1 }} 
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true, amount: 0.3 }} 
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.2 }} 
                         className={`flex flex-col md:flex-row items-center gap-10 pb-20 2xl:pb-48 border-b-[0.5px] border-gray-600 ${
                             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                         }`}
