@@ -44,7 +44,7 @@ export default function Hero() {
               <a href="https://github.com/BettyAfolabi"><i className="fa-brands fa-github" aria-hidden="true"></i> <span className="sr-only">Github</span></a>
             </li>
             <li>
-            <a href="https://github.com/BettyAfolabi"><i className="fa-brands fa-twitter" aria-hidden="true"></i> <span className="sr-only">X</span></a>
+            <a href="https://x.com/devduchess"><i className="fa-brands fa-twitter" aria-hidden="true"></i> <span className="sr-only">X</span></a>
             </li>
           </ul>
         </div>

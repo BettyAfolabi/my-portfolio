@@ -16,7 +16,7 @@ export default function Footer() {
                 <div className="relative w-40 h-40">
                     <div className="absolute inset-0 bg-gray-700 rounded-lg translate-x-2 translate-y-3"></div>
                     <a
-                        href="mailto:betty4web@gmail.com.com"
+                        href="mailto:betty4web@gmail.com"
                         className="relative bg-gray-900 text-white w-full h-full rounded-lg shadow-lg flex flex-col items-center justify-center hover:scale-105 transition-transform"
                     >
                         <FaEnvelope className="text-2xl text-gray-300 hover:text-white transition-colors" />
@@ -44,7 +44,7 @@ export default function Footer() {
             <div className="flex gap-2 lg:gap-4">
                 <a href="https://linkedin.com/in/elizabethafolabib"><i className="fa-brands fa-linkedin p-1 rounded text-[#45a29e] hover:text-[#66FCF1]" aria-hidden ="true"></i> <span className="sr-only">LinkedIn</span></a>
                 <a href="https://github.com/BettyAfolabi"><i className="fa-brands fa-github p-1 rounded text-[#45a29e] hover:text-[#66FCF1]" aria-hidden="true"></i> <span className="sr-only">Github</span></a>
-                <a href="https://github.com/BettyAfolabi"><i className="fa-brands fa-twitter p-1 rounded text-[#45a29e] hover:text-[#66FCF1]" aria-hidden="true"></i> <span className="sr-only">X</span></a>
+                <a href="https://x.com/devduchess"><i className="fa-brands fa-twitter p-1 rounded text-[#45a29e] hover:text-[#66FCF1]" aria-hidden="true"></i> <span className="sr-only">X</span></a>
             </div>
         </div>
         

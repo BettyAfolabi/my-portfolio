@@ -17,6 +17,7 @@ export default function Education() {
               <h3 className="text-lg sm:text-xl font-semibold text-primaryred">
                 Women Techsters Fellowship, Tech4Dev
               </h3>
+              <p className="text-gray-300 text-sm sm:text-base pb-1">Software Development (Frontend)</p>
               <p className="text-gray-300 text-sm sm:text-base">
                 Built responsive web applications with various tech stacks in
                 collaborative teams.
@@ -27,6 +28,7 @@ export default function Education() {
               <h3 className="text-lg sm:text-xl font-semibold text-primaryred">
                 Her Tech Trail Foundation
               </h3>
+              <p className="text-gray-300 text-sm sm:text-base pb-1">Frontend Development Pro Track</p>
               <p className="text-gray-300 text-sm sm:text-base">
                 Created responsive websites using HTML, CSS, TailwindCSS, and
                 JavaScript.
