@@ -18,7 +18,7 @@ export const projects = [
     {
         name:"E-Commerce Store",
         image: "/Store.png",
-        description: "This is a  fake online store where users can shop for wears. jewelries and electronics. Store data is gotten from the fake online store API, and users can shop per category of the product DevDivas-Store",
+        description: "This is an online store where users can shop for wears. jewelries and electronics. Store data is gotten from the fake online store API, and users can shop per category of the product DevDivas-Store",
         btnText: "Explore Store",
         tech: ["JavaScript", "HTML", "CSS"],
         link: "https://devdivasstore.netlify.app/"
@@ -40,12 +40,12 @@ export const projects = [
         link: "https://interactivecard-details-challenge.netlify.app"
     },
     {
-        name:"MyAge-App",
-        image: "/myage.png",
-        description: "My-Age is a react app that calculates the age of a person with animated countdown. ",
-        btnText: "Explore Age-App",
-        tech: ["JavaScript", "HTML", "CSS"],
-        link: "https://myageapp.netlify.app/"
+        name:"Todo WebApp",
+        image: "/todo.png",
+        description: "This is a basic to-do webapp. It allows users to add, edit, and delete tasks seamlessly while maintaining a clean and responsive UI.",
+        btnText: "Explore Todo-WebApp",
+        tech: ["JavaScript", "React", "MaterialUI"],
+        link: "https://pflichten.netlify.app/"
     },
     {
         name:"Voggo",
@@ -54,6 +54,14 @@ export const projects = [
         btnText: "Explore Voggo",
         tech: ["JavaScript", "HTML", "CSS"],
         link: "https://voggo.netlify.app"
+    },
+    {
+        name:"MyAge-App",
+        image: "/myage.png",
+        description: "My-Age is a react app that calculates the age of a person with animated countdown. ",
+        btnText: "Explore Age-App",
+        tech: ["JavaScript", "HTML", "CSS"],
+        link: "https://myageapp.netlify.app/"
     },
     {
         name:"Boomplay Clone",
