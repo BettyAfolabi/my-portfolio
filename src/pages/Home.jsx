@@ -35,8 +35,8 @@ const Home = () => {
     >
         <Hero />
         <div className="gradient"></div>
-        <GithubGraph />
-        <div className="gradient"></div>
+        {/* <GithubGraph />
+        <div className="gradient"></div> */}
         <About />
         <div className="gradient"></div>
         <Projects />
