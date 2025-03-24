@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function About() {
   return (
-    <section className='flex flex-col md:flex-row justify-between px-8 lg:px-20 py-30 bg-[#101b1b]' id='about'>
+    <section className='flex flex-col md:flex-row justify-between gap-10 px-8 lg:px-24 py-30 bg-[#101b1b]' id='about'>
       <div className='basis-full lg:basis-1/2 py-6 lg:py-12'>
         <h2 className='text-[#45a29e]/80 font-bold text-lg'>Introduction</h2>
         <h1 className='font-bold text-3xl py-3 text-white mb-5'>Get To Know Me</h1>

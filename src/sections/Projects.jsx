@@ -14,7 +14,7 @@ export default function Projects() {
   const currentProjects = projects.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
     return (
-        <div className='px-8 lg:px-20 py-30 bg-[#0d314b]' id="projects">
+        <div className='px-8 lg:px-24 py-30 bg-[#0d314b]' id="projects">
             <div className='my-2 lg:my-5 flex flex-col overflow-hidden'>
                 <motion.h2 
                     initial={{ x: 100, opacity: 0 }}
@@ -45,7 +45,7 @@ export default function Projects() {
                         whileInView={{ y: 0, opacity: 1 }} 
                         transition={{ duration: 0.5, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.2 }} 
-                        className={`flex flex-col md:flex-row items-center gap-10 pb-20 2xl:pb-48 border-b-[0.5px] border-gray-600 ${
+                        className={`flex flex-col md:flex-row items-center gap-20 pb-20 2xl:pb-48 border-b-[0.5px] border-gray-600 ${
                             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                         }`}
                     >
@@ -59,7 +59,7 @@ export default function Projects() {
                 
                         <div className="w-full md:w-1/2 space-y-4">
                             <h2 className="text-3xl font-bold pb-10 text-[#45a29e]">{project.name}</h2>
-                            <p className="text-white py-4 px-2">{project.description}</p>
+                            <p className="text-white/90 py-4 px-2">{project.description}</p>
                             
                             <div className="flex gap-2">
                                 {project.tech.map((tech, i) => (

@@ -7,11 +7,11 @@ const Events = () => {
     <div className='pt-28 lg:pt-40 bg-[#0f1616] min-h-screen'>
       <div className='w-5/6 max-w-6xl mx-auto'>
 
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-white drop-shadow-lg text-center">
+        <h2 className="text-3xl sm:text-5xl font-extrabold text-white drop-shadow-lg lg:text-center my-3 lg:my-5 leading-[60px]">
           My Tech Adventures: Events, Conferences & Meetups
         </h2>
 
-        <p className="text-lg text-gray-200 my-3">
+        <p className="text-lg text-gray-200 my-10 text-center">
           Sharing my experiences from the amazing tech events I attend 🎤✨
         </p>
 

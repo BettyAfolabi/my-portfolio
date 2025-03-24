@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
       </section>
      
-      <div className="intro md:pb-20 px-8 lg:px-20">
+      <div className="intro md:pb-20 px-8 lg:px-24">
         <div className="about-text">
           <p>{`Hi! I'm Elizabeth aka Betty. I'm a Frontend Developer who specialise in creating user-friendly and responsive websites. I add a refined touch to each project.`}</p>
           <div className='my-3 bg-[#45a29e] p-3 font-bold text-white hover:bg-[#45a29e]/80 rounded-2xl w-fit'><Link to="/#about">More About Me</Link></div>
