@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="pt-20 pb-12 px-8 lg:px-24">
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center my-10 lg:mt-20 lg:mb-40">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center my-10 lg:mt-20 lg:mb-40">
             <div className="basis-full lg:basis-1/2">
                 <p className="text-gray-500 text-sm pb-3 font-medium">Intrigued ?</p>
                 <h3 className="text-3xl py-3 font-extrabold text-green">Let's Connect</h3>
                 <p className="text-white/80 font-normal text-sm max-w-[400px] leading-[30px]">I’m always excited to hear about new ideas, collaborate with creative minds, and explore innovative design solutions. Whether you have a project in mind or just want to chat, I’d love to connect. Let’s build something amazing together.</p>
             </div>
 
-            <div className="relative w-40 h-40">
+            <div className="relative w-40 h-40 mt-6 lg:mt-0">
                 <div className="absolute inset-0 bg-gray-700 rounded-lg translate-x-2 translate-y-3"></div>
                 <a
                     href="mailto:betty4web@gmail.com"

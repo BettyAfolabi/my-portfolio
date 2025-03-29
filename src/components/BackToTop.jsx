@@ -30,7 +30,7 @@ export default function BackToTop() {
   return (
     <>
       {showTopBtn && (
-        <div className="fixed bottom-8 right-8 sm:right-14 lg:right-32 xl:right-8 z-20">
+        <div className="fixed bottom-18 lg:bottom-8 right-8 sm:right-14 lg:right-5 xl:right-8 z-20">
           <button
             className="bg-dkgreen text-white font-semibold p-3 rounded-full cursor-pointer shadow-lg hover:shadow transition-shadow duration-300 ease-in-out animate-bounce"
             onClick={goToTop}
