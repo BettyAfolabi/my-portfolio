@@ -51,7 +51,7 @@ export default function Navigation(props) {
         </ul>
 
         {/* Mobile Navigation */}
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <Popover>
             <PopoverButton
               className="relative focus:outline-none"
