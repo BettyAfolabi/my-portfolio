@@ -8,7 +8,32 @@ export default function Experience() {
             Frontend Developer
           </h3>
           <p className="text-gray-400 text-sm sm:text-base">
-            Building Bloques | <span className="italic">[08/2024] – Present</span>
+            Checkit | <span className="italic">[05/2025] – Present</span>
+          </p>
+
+          <ul className="mt-4 space-y-3 text-gray-300 text-sm sm:text-base list-disc list-inside">
+            <li>Implement new features and enhance functionalities in version 2 of product.</li>
+            <li>Integrate APIs to enable dynamic and data-driven web experiences.</li>
+            <li>Collaborate with designers and backend devs to deliver high-quality digital solutions.</li>
+            <li>Ensure code quality, performance optimization, and best practices in modern frontend development.</li>
+          </ul>
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-2 my-3">
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Next.js</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>TypeScript</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>TailwindCSS</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Shadcn UI</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Redux</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Jira</p>
+            <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Figma</p>
+         </div>
+        </div>
+
+        <div className="p-6 rounded-lg shadow-lg">
+          <h3 className="text-xl font-semibold text-primaryred">
+            Frontend Developer
+          </h3>
+          <p className="text-gray-400 text-sm sm:text-base">
+            Building Bloques | <span className="italic">[08/2024] – [04/2025]</span>
           </p>
 
           <ul className="mt-4 space-y-3 text-gray-300 text-sm sm:text-base list-disc list-inside">
@@ -20,7 +45,7 @@ export default function Experience() {
             <li>Collaborate with designers and developers to deliver high-quality digital solutions.</li>
             <li>Ensure code quality, performance optimization, and best practices in modern frontend development.</li>
           </ul>
-          <div className="flex gap-2 my-3">
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-2 my-3">
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>Next.js</p>
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>JavaScript</p>
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>TailwindCSS</p>
@@ -44,7 +69,7 @@ export default function Experience() {
             <li>Assigned tasks to frontend developers, provided technical guidance, and ensured smooth workflow.</li>
             <li>Worked hands-on with the team to deliver high-quality solutions, fostering a collaborative development environment.</li>
           </ul>
-          <div className="flex gap-2 my-3">
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-2 my-3">
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>React</p>
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>JavaScript</p>
             <p className='text-xs py-1 px-2 border border-[#45a29e] bg-gray-400/20 rounded-2xl'>TailwindCSS</p>

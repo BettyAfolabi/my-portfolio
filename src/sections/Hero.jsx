@@ -30,7 +30,8 @@ export default function Hero() {
      
       <div className="intro md:pb-20 px-8 lg:px-24">
         <div className="about-text">
-          <p>{`Hi! I'm Elizabeth aka Betty. I'm a Frontend Developer who specialise in creating user-friendly and responsive websites. I add a refined touch to each project.`}</p>
+          <h4 className="font-bold pb-1">Hi, I'm Elizabeth — but you can call me Betty.</h4>
+          <p>{`I’m a Frontend Developer building responsive, user-friendly web experiences. I explore AI and Web3, and share what I learn from dev challenges and real-world projects.`}</p>
           <div className='my-3 bg-[#45a29e] p-3 font-bold text-white hover:bg-[#45a29e]/80 rounded-2xl w-fit'><Link to="/#about">More About Me</Link></div>
         </div>
         <div className="connect">

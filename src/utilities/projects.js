@@ -1,5 +1,13 @@
 export const projects = [
     {
+        name:"Personal Finance Tracker",
+        image: "/finance tracker.png",
+        description: "I built this finance tracker under two hours with AI 🤖, It currently help users track their income and expenses. More features loading..",
+        btnText: "Explore Finance Tracker",
+        tech: ["React", "TypeScript", "TailwindCSS", "Jest", "React Testing Library"],
+        link: "https://meine-finance.vercel.app/"
+    },
+    {
         name:"AtmosChart",
         image: "/Atmoschart.png",
         description: "This is a weather forecast web app where you can view the trends of temperature and humidity conditions of any city",
